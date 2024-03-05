@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora Simpe</title>
+</head>
+<body>
+    <main id="main">
+        <div id="calculadora">
+            <header class="calc_header">
+                <input type="text" disabled id="salida" class="calc_salida">
+            </header>
+            <footer class="calc_footer">
+                <div class="btn-group">
+                    <button data-type="clear" type="reset" value="clear" class="btn btn-blue">AC</button>
+                    <button data-type="operator" value="invert" class="btn btn-blue">+/-</button>
+                    <button data-type="operator" value="%" class="btn btn-blue">%</button>
+                    <button data-type="operator" value="/" class="btn btn-orange">/</button>
+                </div>
+                <div class="btn-group">
+                    <button data-type="operand" value="7" class="btn btn-grey" id="num7">7</button>
+                    <button data-type="operand" value="8" class="btn btn-grey" id="num8">8</button>
+                    <button data-type="operand" value="9" class="btn btn-grey" id="num9">9</button>
+                    <button data-type="operator" value="*" class="btn btn-orange">X</button>
+                </div>
+                <div class="btn-group">
+                    <button data-type="operand" value="4" class="btn btn-grey" id="num4">4</button>
+                    <button data-type="operand" value="5" class="btn btn-grey" id="num5">5</button>
+                    <button data-type="operand" value="6" class="btn btn-grey" id="num6">6</button>
+                    <button data-type="operator" value="-" class="btn btn-orange">-</button>
+                </div>
+                <div class="btn-group">
+                    <button data-type="operand" value="1" class="btn btn-grey" id="num1">1</button>
+                    <button data-type="operand" value="2" class="btn btn-grey" id="num2">2</button>
+                    <button data-type="operand" value="3" class="btn btn-grey" id="num3">3</button>
+                    <button data-type="operator" value="+" class="btn btn-orange">+</button>
+                </div>
+                <div class="btn-group">
+                    <button data-type="operand" value="0" class="btn btn-grey" id="num0">0</button>
+                    <button data-type="operand" value="." class="btn btn-grey" id=".">.</button>
+                    <button data-type="operator" value="=" class="btn btn-orange">=</button>
+                </div>
+
+            </footer>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
